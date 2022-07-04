@@ -1,5 +1,5 @@
-describe('empty spec', () => {
-  it('validates all users', () => {
+describe('1st Tests', () => {
+  it('validates all available user logins', () => {
     cy.visit('https://www.saucedemo.com')
        
     
@@ -31,8 +31,8 @@ describe('empty spec', () => {
   })
 })
         
-        describe('empty spec', () => {
-          it('End to End flow', () => {
+        describe('2nd Test', () => {
+          it('End to End flow and selects a product, adds it to the cart and proceed to the checkout', () => {
 
         cy.get('[data-test=username]').type('standard_user')
         cy.get('[data-test=password]').type('secret_sauce')
@@ -50,8 +50,8 @@ describe('empty spec', () => {
         }) 
        
  
-        describe('empty spec', () => {
-          it('verifies if Filter working properly', () => {
+        describe('3rd Test', () => {
+          it('verifies if the Filter Low to Hi is working properly', () => {
 
         cy.visit('https://www.saucedemo.com')
         cy.get('[data-test=username]').type('standard_user')
